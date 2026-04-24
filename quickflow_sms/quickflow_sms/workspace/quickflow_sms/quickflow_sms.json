@@ -1,0 +1,45 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"TfDxe38_wv\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Quickflow SMS</span>\",\"col\":12}},{\"id\":\"mNplQ_mu6N\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quickflow SMS Settings\",\"col\":3}},{\"id\":\"ltlPYPnhxH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quickflow SMS Log\",\"col\":3}}]",
+ "creation": "2026-04-24 15:49:03.964064",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "solid-info",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Quickflow SMS",
+ "links": [],
+ "modified": "2026-04-24 15:50:07.304160",
+ "modified_by": "Administrator",
+ "module": "Quickflow Sms",
+ "name": "Quickflow SMS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 29.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Quickflow SMS Settings",
+   "link_to": "Quickflow SMS Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Quickflow SMS Log",
+   "link_to": "Quickflow SMS Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Quickflow SMS"
+}
