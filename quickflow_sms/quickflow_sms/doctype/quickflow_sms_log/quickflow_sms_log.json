@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-24 15:32:22.543096",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "status",
+  "section_break_jfvx",
+  "message",
+  "section_break_ktlf",
+  "recipients",
+  "section_break_txvw",
+  "error_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nSuccess\nFailed"
+  },
+  {
+   "fieldname": "section_break_jfvx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Long Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "section_break_txvw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "error_log",
+   "fieldtype": "Long Text",
+   "label": "Error Log"
+  },
+  {
+   "fieldname": "section_break_ktlf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recipients",
+   "fieldtype": "Long Text",
+   "label": "Recipients"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-24 15:34:16.480688",
+ "modified_by": "Administrator",
+ "module": "Quickflow Sms",
+ "name": "Quickflow SMS Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
