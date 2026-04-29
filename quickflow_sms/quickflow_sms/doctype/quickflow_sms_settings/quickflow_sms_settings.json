@@ -7,7 +7,7 @@
  "field_order": [
   "sender_id",
   "endpoint_url",
-  "balance",
+  "top_up",
   "column_break_pemt",
   "quickflow_api_key",
   "quickflow_api_secret",
@@ -45,17 +45,17 @@
    "label": "Is Active"
   },
   {
-   "fieldname": "balance",
-   "fieldtype": "Float",
-   "label": "Balance",
-   "read_only": 1
+   "description": "you will receive stk push to top up",
+   "fieldname": "top_up",
+   "fieldtype": "Button",
+   "label": "Top Up"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-04-24 15:23:09.584805",
+ "modified": "2026-04-29 07:39:32.590715",
  "modified_by": "Administrator",
  "module": "Quickflow Sms",
  "name": "Quickflow SMS Settings",
