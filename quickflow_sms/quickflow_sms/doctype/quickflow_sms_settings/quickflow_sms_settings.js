@@ -21,6 +21,7 @@ frappe.ui.form.on("Quickflow SMS Settings", {
 			],
 			primary_action_label: __("Top Up"),
 			primary_action(values) {
+				d.hide();
 				frappe.call({
 					method: "quickflow_sms.services.rest.initiate_payment",
 					args: {
@@ -32,14 +33,12 @@ frappe.ui.form.on("Quickflow SMS Settings", {
 							frappe.msgprint(
 								__("STK Push initiated successfully. Please check your phone.")
 							);
-							d.hide();
 						} else if (r.message && r.message.CustomerMessage) {
 							frappe.msgprint({
 								title: __("Payment Status"),
 								message: r.message.CustomerMessage,
 								indicator: "blue",
 							});
-							d.hide();
 						}
 					},
 				});
