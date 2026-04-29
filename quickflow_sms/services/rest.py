@@ -162,3 +162,31 @@ def balance():
     except requests.exceptions.RequestException as e:
         frappe.log_error("Quickflow SMS Balance Error", str(e))
         return {"status": "error", "message": str(e)}
+
+@frappe.whitelist()
+def initiate_payment(amount, mobile):
+    try:
+        endpoint_url, api_key, api_secret, sender_id = get_api_credentials()
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+    base_url = endpoint_url.rstrip("/")
+    url = f"{base_url}/api/method/quickflow.services.payment.initiate_payment"
+
+    headers = {
+        "Authorization": f"Token {api_key}:{api_secret}",
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "amount": amount,
+        "mobile": mobile
+    }
+
+    try:
+        response = requests.post(url, headers=headers, json=payload, timeout=30)
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        frappe.log_error("Quickflow SMS Initiate Payment Error", str(e))
+        return {"status": "error", "message": str(e)}

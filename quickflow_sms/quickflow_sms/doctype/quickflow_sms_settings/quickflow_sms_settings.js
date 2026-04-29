@@ -22,7 +22,7 @@ frappe.ui.form.on("Quickflow SMS Settings", {
 			primary_action_label: __("Top Up"),
 			primary_action(values) {
 				frappe.call({
-					method: "quickflow.services.payment.initiate_payment",
+					method: "quickflow_sms.services.rest.initiate_payment",
 					args: {
 						mobile: values.mobile,
 						amount: values.amount,
